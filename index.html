@@ -1,10 +1,66 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>Placeholder</title>
-    </head>
-    <body>
-        <p>This is an placeholder for steli.kiev.ua homepage.</p>
-        <p>Edited by collaborator.</p>
-    </body>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Planning Poker</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+    <div id="menu" class="container menu">
+        <div class="item" onclick="ctrl.show('zero')">0</div>
+        <div class="item" onclick="ctrl.show('half')">1/2</div>
+        <div class="item" onclick="ctrl.show('one')">1</div>
+        <div class="item" onclick="ctrl.show('two')">2</div>
+        <div class="item" onclick="ctrl.show('three')">3</div>
+        <div class="item" onclick="ctrl.show('five')">5</div>
+        <div class="item" onclick="ctrl.show('eight')">8</div>
+        <div class="item" onclick="ctrl.show('thirteen')">13</div>
+        <div class="item" onclick="ctrl.show('twenty')">20</div>
+        <div class="item" onclick="ctrl.show('fourty')">40</div>
+        <div class="item" onclick="ctrl.show('hundred')">100</div>
+        <div class="item" onclick="ctrl.show('question')">?</div>
+        <div class="item" onclick="ctrl.show('coffee')">☕</div>
+    </div>
+
+    <div id="zero" class="container hidden" onclick="ctrl.hide(this.id)">
+        <div class="text">0</div>
+    </div>
+    <div id="half" class="container hidden" onclick="ctrl.hide(this.id)">
+        <div class="text">1/2</div>
+    </div>
+    <div id="one" class="container hidden" onclick="ctrl.hide(this.id)">
+        <div class="text">1</div>
+    </div>
+    <div id="two" class="container hidden" onclick="ctrl.hide(this.id)">
+        <div class="text">2</div>
+    </div>
+    <div id="three" class="container hidden" onclick="ctrl.hide(this.id)">
+        <div class="text">3</div>
+    </div>
+    <div id="five" class="container hidden" onclick="ctrl.hide(this.id)">
+        <div class="text">5</div>
+    </div>
+    <div id="eight" class="container hidden" onclick="ctrl.hide(this.id)">
+        <div class="text">8</div>
+    </div>
+    <div id="thirteen" class="container hidden" onclick="ctrl.hide(this.id)">
+        <div class="text">13</div>
+    </div>
+    <div id="twenty" class="container hidden" onclick="ctrl.hide(this.id)">
+        <div class="text">20</div>
+    </div>
+    <div id="fourty" class="container hidden" onclick="ctrl.hide(this.id)">
+        <div class="text">40</div>
+    </div>
+    <div id="hundred" class="container hidden" onclick="ctrl.hide(this.id)">
+        <div class="text">100</div>
+    </div>
+    <div id="question" class="container hidden" onclick="ctrl.hide(this.id)">
+        <div class="text">?</div>
+    </div>
+    <div id="coffee" class="container hidden" onclick="ctrl.hide(this.id)">
+        <div class="text">☕</div>
+    </div>
+</body>
 </html>
